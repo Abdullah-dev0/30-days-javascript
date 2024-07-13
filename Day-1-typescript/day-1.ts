@@ -1,4 +1,4 @@
-// welcome to 30DaysOfJavaScript for Day 1 in typescript
+// welcome to 30DaysOfJavaScriptAndTypescript
 
 // follow this git repository for more updates:
 
