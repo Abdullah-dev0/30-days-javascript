@@ -49,3 +49,6 @@ Feel free to contribute to this project by:
 - Opening an issue to discuss a bug or improvement.
 - Submitting a pull request to add new content or improve existing content.
 
+---
+
+Thank you for following along, and happy coding!
