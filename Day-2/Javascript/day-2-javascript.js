@@ -28,18 +28,17 @@ console.log("Reminder of two numbers = " + mod);
 
 // Task 6 : Write a program to add two numbers using += operator and console the result.
 
-let c = 10;
-let d = 200;
-let Sum = (c += d);
+let addTwoNum = 10;
+let subtractTwoNum = 20;
+addTwoNum += 5;
 
-console.log("Sum of two numbers using += operator = " + Sum);
+console.log("Sum of two numbers using += operator = " + addTwoNum);
 
 // Task 7 : Write a program to subtract two numbers using -= operator and console the result.
 
-c -= d;
-let Sub = c;
+subtractTwoNum -= 5;
 
-console.log("Subtraction of two numbers using -= operator = " + Sub);
+console.log("Subtraction of two numbers using -= operator = " + subtractTwoNum);
 
 // ---------------------Activity 3 : Comparison Operators
 
@@ -106,5 +105,3 @@ let l = 20;
 let compare10 = k > l ? "k is greater" : "l is greater";
 
 console.log("Comparison of two numbers using ternary operator = " + compare10);
-
-

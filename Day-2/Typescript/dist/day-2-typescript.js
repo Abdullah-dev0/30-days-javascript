@@ -19,14 +19,13 @@ let mod = a % b;
 console.log("Reminder of two numbers = " + mod);
 // --------------------------Activity 2 : Assigment Operators
 // Task 6 : Write a program to add two numbers using += operator and console the result.
-let c = 10;
-let d = 200;
-let Sum = (c += d);
-console.log("Sum of two numbers using += operator = " + Sum);
+let addTwoNum = 10;
+let subtractTwoNum = 20;
+addTwoNum += 5;
+console.log("Sum of two numbers using += operator = " + addTwoNum);
 // Task 7 : Write a program to subtract two numbers using -= operator and console the result.
-c -= d;
-let Sub = c;
-console.log("Subtraction of two numbers using -= operator = " + Sub);
+subtractTwoNum -= 5;
+console.log("Subtraction of two numbers using -= operator = " + subtractTwoNum);
 // ---------------------Activity 3 : Comparison Operators
 // Task 8 : Write a program to compare two numbers with <  and this  >  and console the result.
 let e = 10;
