@@ -6,7 +6,7 @@
 - [x] Day 2: [Operators](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-2)
 - [x] Day 3: [Control Structure](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-3)
 - [x] Day 4: [Loops](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-4)
-- [ ] Day 5:
+- [x] Day 5: [Functions](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-5)
 - [ ] Day 6:
 - [ ] Day 7:
 - [ ] Day 8:
@@ -38,6 +38,7 @@
 2. Day 2: [JavaScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-2/Javascript/day-2-javascript.js) | [TypeScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-2/Typescript/day-2-typescript.ts)
 3. Day 3: [JavaScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-3/javascript/day-3-javascript.js) | [TypeScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-3/Typescript/day-3-typescript.ts)
 4. Day 4: [JavaScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-4/Javascript/day-4-javascript.js) | [TypeScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-4/Typescript/day-4-typescript.ts)
+5. Day 5: [JavaScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-5/Javascript/day-5-javascript.js) | [TypeScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-5/Typescript/day-5-typescript.ts)
 
 ### Overview
 Join me in this 30-day challenge where I will be solving problems and learning JavaScript and TypeScript. Each day, I will be tackling a new topic, providing both JavaScript and TypeScript solutions.
