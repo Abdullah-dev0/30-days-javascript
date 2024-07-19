@@ -1,79 +1,96 @@
-//  Activity 1 : Array creation and accessing elements
+//--------------------- Activity 1 : object creation and Accessing
 
-// Task 1 : create an array of numbers from 1 to 5 and conole.log the array
+// Task 1 : Create an object representing a book with properties for the title, author, and year and log the object to the console.
 
-const numbers: number[] = [1, 2, 3, 4, 5];
+type Book = {
+	title: string;
+	author: string;
+	year: number;
+	printDetails: () => string;
+	updateYear?: (year: number) => number;
+	printDetailsByUsingThis?: () => string;
+};
 
-console.log(numbers);
+const book: Book = {
+	title: "The Art of being alone",
+	author: "Renuka",
+	year: 2021,
+	printDetails: function () {
+		return `Title: ${this.title}, Author: ${this.author}`;
+	},
+};
 
-// Task 2 : assess the first and last element of the array and console.log the result
+console.log("Book :  ", book);
 
-console.log("First element of the array is " + numbers[0]);
-console.log("Last element of the array is " + numbers[numbers.length - 1]);
+// Task 2 : Access and log the tiltle and author of the book object.
 
-// -- ----------------------- Acticity 2 : array methods Basic
+console.log("Title of the Book : ", book.title);
+console.log("Author of the Book : ", book.author);
 
-// Task 3 : use the push method to add an element to the end of the array and console.log the array
+//  ------------------------------  Activity 2 : Object Methods
 
-numbers.push(23);
+// Task 3 : add a method to the book object that returns a string with the books title and author and log the result of calling this method to the console.
 
-console.log("Array After using Push Method ", numbers);
+console.log("Printing Title and Author", book.printDetails());
 
-// Task 4 : use the pop method to remove an element from the end of the array and console.log the array
+// Task 4 : add a method to the book object that takes parameter year and update the year property of the book object and log the book object to the console.
 
-numbers.pop();
+book.updateYear = function (newYear) {
+	return (this.year = newYear);
+};
 
-console.log("Array After using pop Method ", numbers);
+book.updateYear(2019);
 
-// Task 5 : use the shift method to remove  an element to the beginning of the array and console.log the array
+console.log("Updated year = ", book);
 
-numbers.shift();
-console.log("Array After using Shift Method ", numbers);
+// ----------------------- Activity 3 : Nested Objects
 
-// Task: 6 : use the unshift method to add an element to the beginning of the array and console.log the array
+// Task 5 : Create an nested object representing a library with properties like name and books (an array of books of objects) and log the library object to the console.
 
-numbers.unshift(34);
-console.log("Array After using unShift Method", numbers);
+const library = {
+	name: "Renuka's Library",
+	books: [
+		{
+			title: "The Art of being alone",
+		},
+		{
+			title: "How to be happy",
+		},
+		{
+			title: "The Power of Now",
+		},
+	],
+};
 
-// -------------------------------- Activity 3 : Array methods intermediate
+console.log("Library : ", library);
 
-// Task 7 : use the map method to print new array where element is double of the original array and console.log the result
+// Task 6 : Access and log the name of the library and the title of all books in the library.
 
-const doubleArray = numbers.map((number) => {
-	return number + number;
-});
+console.log("Library Name : ", library.name);
+console.log(
+	"Books in the Library : ",
+	library.books.map((book) => book.title),
+);
 
-console.log("doubled numbers Array", doubleArray);
+//  ---------------------- Activity 4 : the this keyword
 
-// Task 8 : use the filter method to print new array where only even numbers are present and console.log the result
+// Task 7 : Add a method to the book object that uses the this keyword to return a string with the books title and  year and log the result of calling this method to the console.
 
-const evenNumberArray = numbers.filter((number) => {
-	return number % 2 == 0;
-});
+book.printDetailsByUsingThis = function () {
+	return `Title: ${this.title}, Year: ${this.year}`;
+};
 
-console.log("Even numbers Array", evenNumberArray);
+console.log("Print Using This Key word : ", book.printDetailsByUsingThis());
 
-// Task 9 : use the reduce method to print the sum of all elements of the array and console.log the result
+// ---------------------- Acticity 5 : Object Iteration
 
-const newArray = [2, 3, 4, 5, 5];
+// Task 8 : Use for...in loop to iterate over the properties of the books object and log each property and its value.
+console.log("Using for...in loop");
 
-const sum = newArray.reduce((num1, num2) => {
-	return num1 + num2;
-}, 0);
-
-console.log("Sum of numbers =", sum);
-
-// -------------------------- Activity 4 : Array iteration methods
-
-// Task 10 : use the for loop method to print all elements of the array and console.log the result
-
-for (let i = 0; i < numbers.length; i++) {
-	console.log(numbers[i]);
+for (let key in book) {
+	console.log(`${key} : ${book[key as keyof Book]}`);
 }
+// Task 9 : Use object.keys and object.values methods to log all the keys and values of thw books object.
 
-// Task 11 : use the forEach method to print all elements of the array and console.log the result
-
-console.log("using For each loop");
-numbers.forEach((element, index) => {
-	console.log("At index " + index + " " + "value = ", element);
-});
+console.log("Keys : ", Object.keys(book));
+console.log("Values : ", Object.values(book));
