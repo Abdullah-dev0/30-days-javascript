@@ -9,7 +9,7 @@
 - [x] Day 5: [Functions](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-5)
 - [x] Day 6: [Arrays](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-6)
 - [x] Day 7: [Objects](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-7)
-- [ ] Day 8: [Es6](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-8)
+- [x] Day 8: [Es6](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-8)
 - [ ] Day 9:
 - [ ] Day 10:
 - [ ] Day 11:
