@@ -9,7 +9,7 @@
 - [x] Day 5: [Functions](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-5)
 - [x] Day 6: [Arrays](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-6)
 - [x] Day 7: [Objects](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-7)
-- [ ] Day 8:
+- [ ] Day 8: [Es6](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-8)
 - [ ] Day 9:
 - [ ] Day 10:
 - [ ] Day 11:
@@ -41,6 +41,7 @@
 5. Day 5: [JavaScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-5/Javascript/day-5-javascript.js) | [TypeScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-5/Typescript/day-5-typescript.ts)
 6. Day 6: [JavaScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-6/Javascript/day-6-javascript.js) | [TypeScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-6/Typescript/day-5-typescript.ts)
 7. Day 7: [JavaScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-7/Javascript/day-7-javascript.js) | [TypeScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-7/Typescript/day-7-typescript.ts)
+8. Day 8: [JavaScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-8/Javascript/day-8-javascript.js) | [TypeScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-8/Typescript/day-8-typescript.ts)
 
 ### Overview
 Join me in this 30-day challenge where I will be solving problems and learning JavaScript and TypeScript. Each day, I will be tackling a new topic, providing both JavaScript and TypeScript solutions.
