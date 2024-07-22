@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Day-10</title>
+	</head>
+	<body>
+		<!-- Activity 1: Basic Event Handling -->
+
+		<!-- Task 1 :  Add a click event listener to a button that changes the text content of a paragraph. -->
+
+		<div>
+			<button id="btn-task-1">Click me to change content</button>
+
+			<p id="content"></p>
+		</div>
+
+		<!-- Task 2 :   Add a double-click event listener to an image that toggles its visibility.-->
+
+		<div>
+			<div>
+				<button id="btn-task-2">Image toggle</button>
+			</div>
+			<img
+				id="task-2"
+				src="https://images.unsplash.com/photo-1721635513019-4dd5f5c18042?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				width="200px"
+				alt="" />
+		</div>
+
+		<!-- // Task 3 :  Add a mouseover event listener to an element that changes its background color. -->
+		<div id="task-3" style="width: 100px; height: 200px; background-color: blue"></div>
+
+		<!-- // Task 4 : Add a mouseout event listener to an element that resets its background color. -->
+		<div id="task-4" style="width: 100px; height: 200px; background-color: purple"></div>
+
+		<!-- // Task 5 :   Add a keydown event listener to an input field that logs the key pressed to the console. -->
+
+		<input type="text" id="task-5" placeholder="press any key" />
+
+		<!-- // Task 6 :  Add a keyup event listener to an input field that displays the current value in a paragraph. -->
+		<div>
+			<input type="text" id="task-6" />
+
+			<p id="task-6-value">Hey i am full stack developer</p>
+		</div>
+
+		<!-- // Task 7 : Add a submit event listener to a form that prevents the default submission and logs the form data to the console. -->
+
+		<div>
+			<form id="task-7">
+				<input name="name" type="text" />
+			</form>
+		</div>
+
+		<!-- // Task 8 :  Add a change event listener to a select dropdown that displays the selected value in a paragraph. -->
+
+		<div style="margin: 2rem 0">
+			<select id="task-8">
+				<option value="Option 1">Option 1</option>
+				<option value="Option 2">Option 2</option>
+				<option value="Option 3">Option 3</option>
+			</select>
+
+			<p id="selected-value">Selected value will be displayed here</p>
+		</div>
+
+		<!-- // Task 9 : Add a click event listener to a list that logs the text content of the clicked list item using event delegation. -->
+		<div>
+			<ul id="task-9">
+				<li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li>
+			</ul>
+		</div>
+
+		<!-- // Task 10 :  Add an event listener to a parent element that listens for events from dynamically added child elements. -->
+
+		<div id="parent">
+			<div>
+				<button id="addChild">Add Child Button</button>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
