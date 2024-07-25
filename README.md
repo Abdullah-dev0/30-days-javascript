@@ -13,7 +13,7 @@
 - [x] Day 9: [DOM Manipulation](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-9)
 - [x] Day 10: [Event Handling](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-10)
 - [x] Day 11: [Promises and Async:Await](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-11)
-- [ ] Day 12:
+- [x] Day 12: [Error handling](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-12)
 - [ ] Day 13:
 - [ ] Day 14:
 - [ ] Day 15:
@@ -45,6 +45,7 @@
 9. Day 9: [JavaScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-9/Javascript/script.js) | [TypeScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-9/Typescript/script.ts)
 10. Day 10: [JavaScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-10/Javascript/script.js) | [TypeScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-10/Typescript/script.ts)
 11. Day 11: [JavaScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-11/Javascript/day-11-javascript.js) | [TypeScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-11/Typescript/day-11-typescript.ts)
+12. Day-12: [JavaScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-12/Javascript/day-12-javascript.js) | [TypeScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-12/Typescript/day-12-typescript.ts)
 
 ### Overview
 Join me in this 30-day challenge where I will be solving problems and learning JavaScript and TypeScript. Each day, I will be tackling a new topic, providing both JavaScript and TypeScript solutions.
