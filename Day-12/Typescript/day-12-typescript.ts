@@ -83,10 +83,66 @@ try {
 
 // Task 6 :  Create a promise that randomly resolves or rejects. Use .catch() to handle the rejection and log an appropriate message to the console.
 
+const randomPromise: Promise<string> = new Promise(
+	(resolve: (value: string) => void, reject: (value: string) => void) => {
+		const random = Math.floor(Math.random() * 2);
+		if (random === 1) {
+			resolve("The promise is Resolved");
+		} else {
+			reject("The promise is Rejected");
+		}
+	},
+);
+
+randomPromise.then((data) => console.log(data)).catch((error) => console.log(error));
+
 // Task 7 :  Use try-catch within an async function to handle errors from a promise that randomly resolves or rejects, and log the error message.
+
+const randomPromise2: Promise<string> = new Promise(
+	(resolve: (value: string) => void, reject: (value: string) => void) => {
+		const random = Math.floor(Math.random() * 2);
+		if (random === 2) {
+			resolve("The promise is Resolved");
+		} else {
+			reject("The promise is Rejected");
+		}
+	},
+);
+
+async function handlePromise(): Promise<void> {
+	try {
+		const data: string = await randomPromise2;
+		console.log(data);
+	} catch (error: any) {
+		console.log(error);
+	}
+}
+
+handlePromise();
 
 // --------------------------------------- Activity 5: Graceful Error Handling in Fetch
 
 // Task 8 :  Use the fetch  API to request data from an invalid URL and handle the error using .catch() . Log an appropriate error message to the console.
 
+fetch("https://jsonplaceholderr.typicode.com/posts")
+	.then((response) => {
+		return response.json();
+	})
+	.then((data: string) => {
+		console.log(data);
+	})
+	.catch((error: any) => console.log("there was an error while fetching the data using (.catch). ", error.message));
+
 // Task 9 : Use the fetch API to request data from an invalid URL within an async function and handle the error using try-catch. Log an appropriate error message.
+
+async function fetchData(): Promise<void> {
+	try {
+		const response = await fetch("https://jsonplaceholderr.typicode.com/posts");
+		const data = await response.json();
+		console.log(data);
+	} catch (error: any) {
+		console.log("There was an error while fetching the data using async and await. ", error.message);
+	}
+}
+
+fetchData();
