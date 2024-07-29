@@ -1,147 +1,52 @@
-// ------------------------------------ Activity 1: Understanding Promises
+// - --------------------------  Activity 1: Class Definition
 
-// Task 1:  Create a promise that resolves with a message after a 2-second timeout and log the message to the console.
+// Task 1: Define a class Person with properties name and age, and a method to return a greeting message. Create an instance of the class and log the greeting message.
 
-const promiseSuccess = new Promise((resolve, reject) => {
-	setTimeout(() => {
-		resolve("Helo My name is Abdullah");
-	}, 2000);
-}).then((data) => {
-	console.log(data);
-});
-
-// task 2 :  Create a promise that rejects with an error message after a 2-second timeout and handle the error using .catch() method.
-
-const promiseError = new Promise((resolve, reject) => {
-	setTimeout(() => {
-		reject("Something went wrong");
-	}, 2000);
-});
-
-promiseError.catch((error) => {
-	console.error(error); // This will handle the error.
-});
-
-// ----------------------------------- Activity 2: Chaining Promises
-
-// Task 3 : Create a sequence of promises that simulate fetching data from a server. Chain the promises to log messages in a specific order.
-
-fetch("https://jsonplaceholder.typicode.com/posts/1")
-	.then((res) => {
-		return res.json();
-	})
-	.then((data) => {
-		console.log(data);
-	})
-	.catch((error) => {
-		console.log("failed to fetch data");
-	});
-
-// ----------------------------------------- Activity 3: Using Async/Await
-
-// Task 4 : Write an async function that waits for a promise to resolve and then logs the resolved value.
-
-const waitForPromise = async () => {
-	const result = await new Promise((resolve) => {
-		setTimeout(() => {
-			resolve("Promise resolved successfully");
-		}, 1000);
-	});
-	console.log(result);
-};
-
-waitForPromise();
-
-// Task 5 :  Write an async function that handles a rejected promise using try-catch and logs the error message.
-
-const promiseRejected = async () => {
-	try {
-		await new Promise((resolve, reject) => {
-			setTimeout(() => {
-				reject("Something went wrong in promiseRejected function reject task");
-			}, 1000);
-		});
-	} catch (error) {
-		console.log(error);
+class Person {
+	constructor(name, age) {
+		this.name = name;
+		this.age = age;
 	}
-};
 
-promiseRejected();
-
-// ------------------------------------- Activity 4: Fetching Data from an API
-
-// Task 6 : use the fetch method API to get data from a public API and log the response data to the console using promises.
-
-// API URL: https://jsonplaceholder.typicode.com/posts/10
-
-const fetchData = fetch("https://jsonplaceholder.typicode.com/posts/4");
-
-fetchData
-	.then((data) => {
-		return data.json();
-	})
-	.then((data) => {
-		console.log(data);
-	})
-	.catch((error) => {
-		console.log("somethig went wrong in fetchData", error);
-	});
-
-// Task 7 : use the fetch method  API to get data from a public API and log the response data to the console using async/await.
-
-const getDataFromAsync = async () => {
-	try {
-		const response = await fetch("https://jsonplaceholder.typicode.com/posts/7");
-		const data = await response.json();
-		console.log(data);
-	} catch (error) {
-		console.log(error);
+	greeting() {
+		return `Hello, my name is ${this.name} and my age ` + `is ${this.age}.`;
 	}
+}
+
+const person = new Person("Alice", 30);
+
+console.log(person.greeting());
+
+// Task 2: Add a method to the Person class that updates the age property and logs the updated age.
+
+person.updateAge = function (newAge) {
+	this.age = newAge;
+	console.log(`Age updated to ${this.age}.`);
 };
 
-getDataFromAsync();
+person.updateAge(31);
+person.greeting();
 
-// ---------------------------------------- Activity 5: Concurrent Promises
+// ------------------------------------ Activity 2: Class Inheritance
 
-// Task 8 : Use promise.all to wait for multiple promises to resolve and then log all their values.
+// Task 3: Define a class Student that extends the Person class. Add a property studentId and a method to return the student ID. Create an instance of the Student class and log the student ID.
 
-const promise1 = new Promise((resolve, reject) => {
-	setTimeout(() => {
-		resolve(2);
-	}, 1000);
-});
-const promise2 = new Promise((resolve, reject) => {
-	setTimeout(() => {
-		resolve(2);
-	}, 1000);
-});
+// Task 4: Override the greeting method in the Student class to include the student ID in the message. Log the overridden greeting message.
 
-Promise.all([promise1, promise2])
-	.then(([res1, res2]) => {
-		console.log("The Response From promises is ", res1 + res2);
-	})
-	.catch((error) => {
-		console.log(error);
-	});
+// ------------------------------- Activity 3: Static Methods and Properties
 
-// Task 9: use promise.race  to log the value of the first promise that resolves among multiple promises.
+// Task 5: Add a static method to the Person class that returns a generic greeting message. Call this static method without creating an instance of the class and log the message.
 
-const promiseRace1 = new Promise((resolve, reject) => {
-	setTimeout(() => {
-		resolve(2);
-	}, 1000);
-});
+// Task 6: Add a static property to the Student class to keep track of the number of students created. Increment this property in the constructor and log the total number of students.
 
-const promiseRace2 = new Promise((resolve, reject) => {
-	setTimeout(() => {
-		resolve(3);
-	}, 500);
-});
+// ----------------------------------------- Activity 4: Getters and Setters
 
-Promise.race([promiseRace1, promiseRace2])
-	.then((value) => {
-		console.log("First resolved value:", value);
-	})
-	.catch((error) => {
-		console.error("Something went wrong:", error);
-	});
+// Task 7: Add a getter method to the Person class to return the full name (assume firstName and lastName properties). Create an instance and log the full name using the getter.
+
+// Task 8: Add a setter method to the Person class to update the name properties (firstName and lastName). Update the name using the setter and log the updated full name.
+
+// ---------------------------------- Activity 5: Private Fields (Optional)
+
+// Task 9: Define a class Account with private fields for balance and a method to deposit and withdraw money. Ensure that the balance can only be updated through these methods.
+
+// Task 10: Create an instance of the Account class and test the deposit and withdraw methods, logging the balance after each operation.
