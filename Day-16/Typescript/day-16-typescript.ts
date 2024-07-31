@@ -2,7 +2,7 @@
 
 // Task 1: Write a recursive function to calculate the factorial of a number. Log the result for a few test cases.
 
-function factorial(n) {
+function factorial(n: number): number {
 	if (n === 0) {
 		return 1;
 	}
@@ -14,7 +14,7 @@ console.log("Factorial of 0:", factorial(0)); // 1
 
 // Task 2: Write a recursive function to calculate the nth Fibonacci number. Log the result for a few test cases.
 
-function fibonacci(n) {
+function fibonacci(n: number): number {
 	if (n <= 1) {
 		return n;
 	}
@@ -28,7 +28,7 @@ console.log("Fibonacci of 10:", fibonacci(10)); // 55
 
 // Task 3: Write a recursive function to find the sum of all elements in an array. Log the result for a few test cases.
 
-function sumArray(arr) {
+function sumArray(arr: number[]): number {
 	if (arr.length === 0) {
 		return 0;
 	}
@@ -40,7 +40,7 @@ console.log("Sum of [10, 20, 30]:", sumArray([10, 20, 30])); // 60
 
 // Task 4: Write a recursive function to find the maximum element in an array. Log the result for a few test cases.
 
-function maxArray(arr) {
+function maxArray(arr: number[]): number {
 	if (arr.length === 1) {
 		return arr[0];
 	}
@@ -55,7 +55,7 @@ console.log("Max of [10, 20, 30, 5]:", maxArray([10, 20, 30, 5])); // 30
 
 // Task 5: Write a recursive function to reverse a string. Log the result for a few test cases.
 
-function reverseString(str) {
+function reverseString(str: string): string {
 	if (str === "") {
 		return "";
 	}
@@ -67,7 +67,7 @@ console.log("Reverse of 'abcd':", reverseString("abcd")); // "dcba"
 
 // Task 6: Write a recursive function to check if a string is a palindrome. Log the result for a few test cases.
 
-function isPalindrome(str) {
+function isPalindrome(str: string): boolean {
 	if (str.length <= 1) {
 		return true;
 	}
@@ -84,7 +84,7 @@ console.log("'hello' is palindrome:", isPalindrome("hello")); // false
 
 // Task 7: Write a recursive function to perform a binary search on a sorted array. Log the index of the target element for a few test cases.
 
-function binarySearch(arr, target, start = 0, end = arr.length - 1) {
+function binarySearch(arr: number[], target: number, start: number = 0, end: number = arr.length - 1): number {
 	if (start > end) {
 		return -1;
 	}
@@ -104,7 +104,7 @@ console.log("Index of 6 in [1, 2, 3, 4, 5]:", binarySearch([1, 2, 3, 4, 5], 6));
 
 // Task 8: Write a recursive function to count the occurrences of a target element in an array. Log the result for a few test cases.
 
-function countOccurrences(arr, target) {
+function countOccurrences(arr: number[], target: number): number {
 	if (arr.length === 0) {
 		return 0;
 	}
@@ -119,14 +119,16 @@ console.log("Occurrences of 6 in [1, 2, 3, 4, 5]:", countOccurrences([1, 2, 3, 4
 // Task 9: Write a recursive function to perform an in-order traversal of a binary tree. Log the nodes as they are visited.
 
 class TreeNode {
-	constructor(value) {
+	value: number;
+	left: TreeNode | null = null;
+	right: TreeNode | null = null;
+
+	constructor(value: number) {
 		this.value = value;
-		this.left = null;
-		this.right = null;
 	}
 }
 
-function inOrderTraversal(node) {
+function inOrderTraversal(node: TreeNode | null): void {
 	if (node !== null) {
 		inOrderTraversal(node.left);
 		console.log(node.value);
@@ -136,7 +138,7 @@ function inOrderTraversal(node) {
 
 // Task 10: Write a recursive function to calculate the depth of a binary tree. Log the result for a few test cases.
 
-function treeDepth(node) {
+function treeDepth(node: TreeNode | null): number {
 	if (node === null) {
 		return 0;
 	}
