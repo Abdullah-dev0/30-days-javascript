@@ -18,10 +18,10 @@
 - [x] Day 14: [Classes](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-14)
 - [x] Day 15: [Closures](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-15)
 - [x] Day 16: [Recursion](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-16)
-- [x] Day 17: [Data structure and Algorithms](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-17)
-- [ ] Day 18:
-- [ ] Day 19:
-- [ ] Day 20:
+- [x] Day 17: [Data structure](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-17)
+- [x] Day 18: [Algorithms](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-18)
+- [x] Day 19: [Regular Expresstions](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-19)
+- [x] Day 20: [LocalStroage And Session Stroage](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/tree/main/Day-20)
 - [ ] Day 21:
 - [ ] Day 22:
 - [ ] Day 23:
@@ -51,6 +51,9 @@
 15. Day-15: [JavaScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-15/Javascript/day-15-javascript.js) | [TypeScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-15/Typescript/day-15-typescript.ts)
 16. Day-16: [JavaScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-16/Javascript/day-16-javascript.js) | [TypeScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-16/Typescript/day-16-typescript.ts)
 17. Day-17: [JavaScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-17/Javascript/day-17-javascript.js) | [TypeScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-17/Typescript/day-17-typescript.ts)
+18. Day-18: [JavaScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-18/Javascript/day-18-javascript.js) | [TypeScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-18/Typescript/day-18-typescript.ts)
+19. Day-19: [JavaScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-19/Javascript/day-19-javascript.js) | [TypeScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-19/Typescript/day-19-typescript.ts)
+20. Day-20: [JavaScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-20/Javascript/day-20-javascript.js) | [TypeScript](https://github.com/Abdullah-dev0/30-days-javascript-And-typescript/blob/main/Day-20/Typescript/day-20-typescript.ts)
 
 ### Overview
 Join me in this 30-day challenge where I will be solving problems and learning JavaScript and TypeScript. Each day, I will be tackling a new topic, providing both JavaScript and TypeScript solutions.
